@@ -4,6 +4,11 @@ import javax.swing.JOptionPane;
 
 public class Unbirthday {
 	public static void main(String[] args) {
-		JOptionPane.showMessageDialog(null, message);
+		String birthday = JOptionPane.showInputDialog("What is your birthday(mm/dd)?");
+		if (birthday.equals("08/15")) {
+		JOptionPane.showMessageDialog(null, "Have a happy birthday!");
+		}else {
+			JOptionPane.showMessageDialog(null, "Have a happy unbirthday!");
+		}
 	}
 }
